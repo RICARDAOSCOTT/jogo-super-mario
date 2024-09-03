@@ -37,6 +37,8 @@
     animation: clouds-animation 20% infinite linear;
 }
 
+button
+
 @keyframes pipe-animation {
     from {
         right: -80px
@@ -73,7 +75,6 @@
         right: -550px;
     }
 
-    to {
         right: 100%;
     }
 }
