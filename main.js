@@ -3,10 +3,14 @@ const pipe = document.querySelector('.pipe');
 const startbutton = document.querySelector(".start");
 const gameOverScreen = document.querySelector(".game-over");
 
+audioStart = new Audio("./sound/audio_theme.mp3");
+const gameOverSound = new Audio ("./sound/audio_gameover.mp3");
+
 let gameStarted = false;
 
 const startGame = () => {
 gameStarted = true;
+audioStart.play();
 
 pipe.style.animation  = "pipe-animation 1.5s" infinite
     
@@ -18,14 +22,15 @@ clouds.style.opacity = "1";
 
 
 const jump = () => {
+    if(gameStarted) [
     mario.classList.add('jump');
 
-}
     setTimeout (() => {
     mario.classList.remove("jump");
 }
 ,500 );
-
+}
+}
 
 const loop = setInterval (() => {})
 const pipePosition = pipe.offseftleft;
