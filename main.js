@@ -12,7 +12,7 @@ const startGame = () => {
 gameStarted = true;
 audioStart.play();
 
-pipe.style.animation  = "pipe-animation 1.5s" infinite
+pipe.style.animation  = "pipe-animation 1.5s infinite linear";
     
 startButton.style.display = "none";
 mario.style.opacity = "1";
@@ -23,7 +23,7 @@ nuvem.style.opacity = "1";
 
 const jump = () => {
     if(gameStarted) [
-    mario.classList.add('jump');
+    mario.classList.add('jump')
 
     setTimeout (() => {
     mario.classList.remove("jump");
