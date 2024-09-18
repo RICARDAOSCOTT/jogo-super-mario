@@ -63,6 +63,13 @@ gameOverScreen.style.display = "flex";
 }
 },10);
 
+document.addEventListener("keydown", jump);
+
+const restartGame = () => {
+
+    window.location.reload();
+}
+
 
 
 
