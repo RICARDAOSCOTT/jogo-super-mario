@@ -58,7 +58,7 @@ mario.style.marginLeft = "50px";
 
 clearInterval(loop);
 gameOverScreen.style.display = "flex";
-}   else if (pipePosition < 0 && gameStarted) {
+}  else if (pipePosition < 0 && gameStarted) {
 updateScore();
 pipe.style.left = '';
 }
